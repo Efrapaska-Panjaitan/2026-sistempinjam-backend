@@ -11,3 +11,10 @@ dan menggunakan [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 - Inisialisasi proyek ASP.NET Core 8.0 Web API
 - Koneksi ke PostgreSQL menggunakan Entity Framework Core + Npgsql
+- Konfigurasi Swagger UI untuk dokumentasi dan testing API
+- Konfigurasi CORS untuk frontend React (localhost:5173)
+- Auto migration database saat startup (dotnet ef database update)
+- Auto seeding data awal saat startup
+- File .gitignore untuk mengecualikan bin/, obj/, appsettings.Development.json
+- File .env.example sebagai template konfigurasi
+- File README.md dengan panduan instalasi lengkap

@@ -1,0 +1,6 @@
+@_2026_sistempinjam_backend_HostAddress = http://localhost:5008
+
+GET {{_2026_sistempinjam_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

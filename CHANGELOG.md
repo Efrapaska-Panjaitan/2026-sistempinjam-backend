@@ -18,3 +18,12 @@ dan menggunakan [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - File .gitignore untuk mengecualikan bin/, obj/, appsettings.Development.json
 - File .env.example sebagai template konfigurasi
 - File README.md dengan panduan instalasi lengkap
+- Model `Room` dengan field: Name, RoomCode, Capacity, Building, Floor, IsActive, soft delete
+- Model `Booking` dengan field: BorrowerName, PurposeOfUse, StartTime, EndTime, Status, Notes, soft delete
+- `AppDbContext` dengan global query filter untuk soft delete
+- Migration awal: tabel `rooms` dan `bookings`
+- `DatabaseSeeder` dengan 5 data ruangan dan 5 data booking awal
+- **RoomsController**: CRUD lengkap (GET list, GET by id, POST, PUT, DELETE soft delete)
+- **BookingsController**: CRUD lengkap + PATCH status + validasi konflik jadwal
+- DTO: `BookingCreateDto`, `BookingUpdateDto`, `BookingStatusDto`, `BookingResponseDto`
+- DTO: `RoomCreateDto`, `RoomUpdateDto`, `RoomResponseDto`

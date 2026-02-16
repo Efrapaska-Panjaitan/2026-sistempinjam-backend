@@ -22,18 +22,5 @@ public class AppDbContext : DbContext
 
             entity.HasIndex(r => r.RoomCode).IsUnique();
         });
-
-        // === BOOKING ===
-        modelBuilder.Entity<Booking>(entity =>
-        {
-            // Global query filter: hanya tampilkan booking yang belum dihapus
-            entity.HasQueryFilter(b => b.DeletedAt == null);
-
-            // Relasi: banyak Booking -> satu Room
-            entity.HasOne(b => b.Room)
-                .WithMany(r => r.Bookings)
-                .HasForeignKey(b => b.RoomId)
-                .OnDelete(DeleteBehavior.Restrict);
-        });
     }
 }

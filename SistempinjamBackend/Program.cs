@@ -23,7 +23,7 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new()
+    c.SwaggerDoc("v1", new ()
     {
         Title       = "SISTEMPINJAM API",
         Version     = "v1",

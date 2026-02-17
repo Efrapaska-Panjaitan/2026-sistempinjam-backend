@@ -6,7 +6,7 @@ dan menggunakan [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-## [1.0.0] - 2026-02-16
+## [1.0.0] - 2026-02-17
 
 ### Added
 - Inisialisasi proyek ASP.NET Core 8.0 Web API
@@ -27,3 +27,11 @@ dan menggunakan [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - **BookingsController**: CRUD lengkap + PATCH status + validasi konflik jadwal
 - DTO: `BookingCreateDto`, `BookingUpdateDto`, `BookingStatusDto`, `BookingResponseDto`
 - DTO: `RoomCreateDto`, `RoomUpdateDto`, `RoomResponseDto`
+- Validasi input via DataAnnotations (Required, MaxLength, Range, RegularExpression)
+- CORS configuration untuk frontend React (localhost:5173)
+- Swagger UI untuk dokumentasi API
+- Search & filter pada GET /api/bookings (by name, purpose, status)
+- Pagination pada GET /api/bookings
+- Auto migration & seeding saat startup (development mode)
+- `.gitignore` untuk ASP.NET Core
+- `.env.example` sebagai template konfigurasi

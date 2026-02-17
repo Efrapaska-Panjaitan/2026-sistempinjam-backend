@@ -31,6 +31,7 @@ public class BookingsController : ControllerBase
     {
         var query = _context.Bookings
             .Include(b => b.Room)
+            .Where(b => b.DeletedAt == null)
             .AsQueryable();
 
         // Filter pencarian berdasarkan nama peminjam atau keperluan
@@ -90,6 +91,7 @@ public class BookingsController : ControllerBase
     {
         var booking = await _context.Bookings
             .Include(b => b.Room)
+            .Where(b => b.DeletedAt == null)
             .FirstOrDefaultAsync(b => b.Id == id);
 
         if (booking == null)

@@ -1,6 +1,6 @@
 # 2026-SISTEMPINJAM-BACKEND
 
-REST API untuk **Sistem Peminjaman Ruang Kampus (SIPERU)**.
+REST API untuk **Sistem Peminjaman Ruangan Kampus**.
 
 ## Description
 
@@ -29,7 +29,7 @@ Backend API yang dibangun dengan ASP.NET Core 8.0 dan PostgreSQL, menyediakan en
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/username/2026-sistempinjam-backend.git
+git clone https://github.com/Efrapaska-Panjaitan/2026-sistempinjam-backend.git
 cd 2026-sistempinjam-backend/2026-sistempinjam-backend
 
 # 2. Buat database di PostgreSQL
@@ -55,7 +55,7 @@ Buat file `appsettings.Development.json` (sudah ada di .gitignore) dengan isi:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Host=localhost;Port=5432;Database=sistempinjam_db;Username=postgres;Password=PASSWORDKAMU"
+    "DefaultConnection": "Host=localhost;Port=5432;Database=sistempinjam_db;Username=postgres;Password=(password)"
   }
 }
 ```
@@ -64,8 +64,8 @@ Buat file `appsettings.Development.json` (sudah ada di .gitignore) dengan isi:
 
 Setelah `dotnet run`, akses:
 
-- **Swagger UI**: http://localhost:5000/swagger
-- **Base API URL**: http://localhost:5000/api
+- **Swagger UI**: http://localhost:5008/swagger
+- **Base API URL**: http://localhost:5008/api
 
 ### Endpoint Utama
 
